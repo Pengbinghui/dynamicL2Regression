@@ -1,0 +1,12 @@
+# hyper parameter choice:
+
+num_exp = 5 
+
+raw_sampling, apx_sampling:
+err = 0.1, samplingScale = 1/(2 * err^2), k = round(1/(2 * err^2))
+err = 0.2, samplingScale = 1/(2 * err^2), k = round(1/err^2)
+err = 0.5, samplingScale = 1/(2 * err^2), k = round(4/err^2)
+err = 1, samplingScale = 1/(err^2), k = round(16/err^2)
+
+uniform
+p = 0.5, 0.2, 0.1, 0.05
